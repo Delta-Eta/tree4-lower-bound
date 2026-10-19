@@ -40,4 +40,4 @@ jobs:
       - name: Recompile every local proof and check axiom output
         run: |
           python3 scripts/test_verify.py
-          python3 scripts/verify.py --jobs 2
+          python3 scripts/verify.py --jobs 1 --lean-threads 1
