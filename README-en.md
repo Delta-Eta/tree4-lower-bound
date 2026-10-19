@@ -26,7 +26,7 @@ Install Git, [elan](https://github.com/leanprover/elan), and Python 3.10 or newe
 git clone https://github.com/Delta-Eta/tree4-lower-bound.git
 cd tree4-lower-bound
 lake exe cache get
-python scripts/verify.py --jobs 2
+python scripts/verify.py --jobs 1
 ```
 
 Use `python3` where appropriate. On Windows use a short clone path such as `C:\t4` to avoid long-path cache extraction failures. Use `--jobs 1` if memory is limited. All **749 local modules** are recompiled in dependency order. Success requires exit code 0 and:
@@ -48,5 +48,6 @@ An epsilon-priority implementation error was corrected before the first public r
 ## License
 
 No license has yet been assigned to this repository itself. Dependencies retain their own licenses.
+
 
 

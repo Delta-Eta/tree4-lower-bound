@@ -43,7 +43,7 @@ theorem strict_lower_bound :
 git clone https://github.com/Delta-Eta/tree4-lower-bound.git
 cd tree4-lower-bound
 lake exe cache get
-python scripts/verify.py --jobs 2
+python scripts/verify.py --jobs 1
 ```
 
 Linux で `python` がない場合は `python3` を使ってください。Windows では長いパスを避け、例えば `C:\t4` に clone してください。メモリが不足する場合は `--jobs 1` を指定します。
@@ -84,5 +84,6 @@ Lean の検査は形式的な命題を証明します。自然言語の意図と
 ## ライセンス
 
 このリポジトリ自身のライセンスは未設定です。依存ライブラリはそれぞれのライセンスに従います。
+
 
 

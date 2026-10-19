@@ -4,7 +4,7 @@
 
 1. Clone to a short path; on Windows, for example: `git clone https://github.com/Delta-Eta/tree4-lower-bound.git C:\t4` and then `cd C:\t4`.
 2. Run `lake exe cache get` to obtain the pinned dependency cache.
-3. Run `python scripts/verify.py --jobs 2` (or `python3`; use `--jobs 1` for less memory).
+3. Run `python scripts/verify.py --jobs 1` (or `python3`; use `--jobs 1` for less memory).
 4. Check the final success message **and exit code 0**. In PowerShell, immediately inspect `$LASTEXITCODE`; in a POSIX shell, inspect `$?`.
 
 The verifier checks the published source inventory, rejects proof shortcuts in the local sources, and recompiles all local modules in dependency order with Lean. A dependent module starts only after its local dependencies have passed in that same run. It does not treat old local object files as evidence of success. Final axiom output is checked against `propext`, `Classical.choice`, and `Quot.sound`. The script and its inventory are supplementary checks; Lean performs the proof checking.
@@ -20,3 +20,6 @@ Local records in `verification/` describe the checks performed before publicatio
 The workflow uses a standard public-repository GitHub-hosted runner and does not configure paid larger runners, artifact uploads, or Actions cache storage. It checks out a pinned checkout action, installs elan from a pinned installer revision, obtains dependencies, and runs the verifier. Network/tool availability can cause infrastructure failures distinct from a Lean proof error.
 
 All proof source bytes are preserved by Git using `Proof/*.lean -text`. `verification/source-sha256.json` records their SHA-256 values. An intentional proof edit must update that inventory and rerun the complete verification; a hash match by itself proves no theorem.
+
+
+CI uses one module and one Lean worker at a time because some kernel computations use about 9 GiB of RAM. See [resource diagnosis](ci-resources.md). The verifier now prints start events, elapsed times, and periodic resource information while a module is still running.
