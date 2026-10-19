@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-19",
+  "toolchain": "leanprover/lean4:v4.35.0",
+  "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "core_modules": 746,
+  "additional_semantic_audit_modules": 2,
+  "public_entrypoint_modules": 1,
+  "core_proof_source_bytes_changed": false,
+  "core_separate_directory_rebuild": "passed",
+  "manuscript_correspondence_check": "passed",
+  "independent_definition_check": "passed",
+  "public_entrypoint_check": "passed",
+  "github_actions_check": "see live Actions results; local results are not CI results",
+  "pdf_sha256": "af54bcfdbb16e05e57010b2f0d891b50892e798da78fcf848bbc091ca6e44c85",
+  "allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "remarks": [
+    "These are recorded local checks, not a substitute for running Lean.",
+    "Final axiom outputs are included; host-specific diagnostic logs are excluded."
+  ],
+  "verifier_tests": "5 passed; orchestration tests only, not mathematical proofs"
+}

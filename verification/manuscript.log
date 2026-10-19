@@ -1,0 +1,14 @@
+'LowerManuscriptContract.manuscript_strict_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LowerManuscriptContract.maximum_exists' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LowerManuscriptContract.maximum_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LowerManuscriptContract.unordered_witness' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LowerManuscriptContract.strict_lower_bound_for_any_manuscript_maximum' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LowerManuscriptContract.ordinal_step_of_normal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LowerManuscriptContract.atom_block_priority' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LowerManuscriptContract.prefix_retained' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LowerManuscriptContract.index_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LowerManuscriptContract.hardy_satisfies_specification' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LowerManuscriptContract.hardy_specification_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LowerManuscriptContract.fully_specified_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]

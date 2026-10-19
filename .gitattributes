@@ -1,0 +1,9 @@
+# Preserve the reviewed proof bytes and their published SHA-256 hashes.
+Proof/*.lean -text
+*.pdf binary
+*.md text eol=lf
+*.py text eol=lf
+*.toml text eol=lf
+*.json text eol=lf
+*.yml text eol=lf
+lean-toolchain text eol=lf

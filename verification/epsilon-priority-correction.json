@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-19",
+  "id": "epsilon-principal-term-priority",
+  "affected_bundle_sha256": "ed5dafbe864670fdfb6cdbeb70f338b3e3f90c8c491c211dac4b7c81d75b04bb",
+  "issue": "The former terminal Cantor-term branch applied the general omega-power rule to an epsilon principal term with a nontrivial coefficient. The manuscript requires the epsilon-atom rule to take priority, also after a positive prefix.",
+  "repair": "Recognize atomic exponents before selecting the ordinary power rule. Recompile descent, size, cofinality, ordinal-step, and Hardy dependents. Add universal prefix/coefficient equations and the semantic regression (epsilon_0*2)[0]=epsilon_0+omega.",
+  "source_pdf_changed": false,
+  "changes": [
+    {
+      "module": "LowerCDescent",
+      "before_source_sha256": "8594b3676adc841d258a80f35f6cd9ac5f653a9cf6e67a62309d098f9663861e",
+      "after_source_sha256": "e4fcfa35fdaa37adc83207ab54d0324d042274e9e973339e69fb61541aa24475"
+    },
+    {
+      "module": "LowerCDescentSize",
+      "before_source_sha256": "4f88136b589234b47fc727eb08d953e93a344df18997e250a60b5c2e9d53aa26",
+      "after_source_sha256": "3c4327b89f71fbcede21c8ddbe177a4ff513842d8fa6d661b7bdb9c0d200f9be"
+    },
+    {
+      "module": "LowerCDescentCofinal",
+      "before_source_sha256": "04c19dbd4ec42a3f11e4417e4b4d9b3e1501b359617b60891e30001e11ba5726",
+      "after_source_sha256": "fa24964bb6f690fa5a3249333b57be756f256dda50b663dd0c681a51509fed96"
+    }
+  ]
+}
