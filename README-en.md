@@ -6,7 +6,7 @@
 
 This repository formalizes the manuscript's inequality
 
-$$H_{\Psi}(2\uparrow^4 4)<\operatorname{tree}(4).$$
+$$H_{\Psi}(2\uparrow^4 4)<\mathrm{tree}(4).$$
 
 It contains the lower-bound proof, a manuscript correspondence check, and a separate specification of the intended mathematical definitions. It makes no claim to prove an upper bound or an exact value of tree(4).
 
@@ -48,4 +48,5 @@ An epsilon-priority implementation error was corrected before the first public r
 ## License
 
 No license has yet been assigned to this repository itself. Dependencies retain their own licenses.
+
 
