@@ -48,6 +48,7 @@ class VerifierTests(unittest.TestCase):
             self.fixture(root)
             called = []
             def fake_run(command, **kwargs):
+                self.assertIn('-j1', command)
                 name = Path(command[-1]).stem
                 if name == 'B': self.assertIn('A', called)
                 if name == 'C': self.assertIn('B', called)
